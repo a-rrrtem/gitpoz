@@ -1,0 +1,17 @@
+@startuml
+
+start
+
+:Open file for writing;
+if (File opened successfully?) then (yes)
+    :Write each number in result;
+else (no)
+    :Print error message;
+endif
+
+:Close file;
+:Print success message;
+
+stop
+
+@enduml
